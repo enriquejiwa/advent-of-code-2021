@@ -14,7 +14,6 @@ def get_power_consumption(filename: str) -> int:
     return gamma * epsilon
 
 def get_life_support_rating(filename: str) -> int:
-    count = 0
     with open(filename) as file:
         lines = [int(line, 2) for line in file]
     for i in range(11, -1, -1):
